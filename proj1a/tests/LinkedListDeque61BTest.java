@@ -96,6 +96,7 @@ public class LinkedListDeque61BTest {
          assertWithMessage("should return 1").that(lld1.removeFirst()).isEqualTo(1);
          lld1.addLast(2);
          lld1.addLast(3);
+         lld1.addLast(4);
          assertWithMessage("should return 2").that(lld1.removeFirst()).isEqualTo(2);
          assertWithMessage("should return 3").that(lld1.removeFirst()).isEqualTo(3);
          assertWithMessage("should return null").that(lld1.removeFirst()).isNull();
