@@ -27,5 +27,19 @@ public class SLListTest {
     @Test
     public void testSLListReverse() {
         // TODO: Add tests
+        SLList test1 = SLList.of(1, 2, 3);
+        SLList test2 = new SLList();
+        SLList test3 = SLList.of(4);
+        test1.reverse();
+        test2.reverse();
+        test3.reverse();
+        assertWithMessage("test1 does not have a size of 3").that(test1.size()).isEqualTo(3);
+        assertWithMessage("test1 does not reversed").that(test1.equals(SLList.of(3,2,1))).isTrue();
+        assertWithMessage("test2 have a size of zero").that(test2.size()).isEqualTo(0);
+        assertWithMessage("test3 does not have a size 1").that(test3.size()).isEqualTo(1);
+        assertWithMessage("test3 reverse failed").that(test3.equals(SLList.of(4))).isTrue();
+
+
+
     }
 }
