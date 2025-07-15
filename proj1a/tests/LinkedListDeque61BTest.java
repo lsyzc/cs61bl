@@ -113,6 +113,7 @@ public class LinkedListDeque61BTest {
          lld1.addLast(3);
          lld1.addLast(4);
          assertWithMessage("should return 4").that(lld1.removeLast()).isEqualTo(4);
+         assertWithMessage("should return 3").that(lld1.removeLast()).isEqualTo(3);
         assertWithMessage("now size should be 2").that(lld1.size()).isEqualTo(2);
     }
     @Test
